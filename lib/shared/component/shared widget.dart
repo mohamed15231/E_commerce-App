@@ -10,7 +10,6 @@ Widget buildProductFavorite({
   required BuildContext context,
   bool oldPrice =true,
 }){
-
       return Container(
         color: Colors.white,
         height: 200,
@@ -78,7 +77,7 @@ Widget buildProductFavorite({
                           padding: const EdgeInsets.all(8.0),
                           child: CircleAvatar(
                             backgroundColor:
-                            ShopAppCubit.get(context).favoriteMap[product.id]!
+                            ShopAppCubit.get(context).favoriteMap[product.id]??false
                                 ? Colors.blue
                                 :
                             Colors.grey,

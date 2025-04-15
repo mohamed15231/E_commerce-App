@@ -43,7 +43,7 @@ class SearchScreen extends StatelessWidget {
                     Expanded(
                       child: ListView.separated(
                         itemBuilder: (context,index) {
-                          return buildProductFavorite(product: cubit.getSearchModel?.data!.data![index], context: context);
+                          return buildProductFavorite(oldPrice: false,product: cubit.getSearchModel?.data!.data![index], context: context);
                         }, separatorBuilder: (BuildContext context, int index) =>Divider(
                         height: 2,
                         color: Colors.grey,
